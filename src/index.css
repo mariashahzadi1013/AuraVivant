@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1E1C1A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom refined transitions and scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B6A0;
+}
+
+/* Subtle luxury shimmer and shadow */
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(30, 28, 26, 0.05), 0 1px 3px 0 rgba(30, 28, 26, 0.03);
+}
+
+.luxury-card-hover {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -15px rgba(30, 28, 26, 0.08), 0 1px 4px 0 rgba(30, 28, 26, 0.04);
+}

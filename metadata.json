@@ -1,0 +1,6 @@
+{
+  "name": "AuraVivant — Haute Beauté & Parfumerie",
+  "description": "Discover AuraVivant: an exquisite collection of diamond-infused skincare, artisanal cosmetics, and haute French-oriental fragrances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
